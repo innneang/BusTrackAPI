@@ -18,8 +18,8 @@ $router->get('/', function () use ($router) {
 
 
 $router->get('/test', function(){
-    $plate1 = '139';
-    $plate2 = '0305';
+    $plate1 = '13';
+    $plate2 = '1203';
     $url = 'http://gpstmc.dlt.go.th/dltgps/web/map_mobile/track_api.php?plate1=' . $plate1 . '&plate2=' . $plate2 . '&off_code=1&method=check_plate';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
