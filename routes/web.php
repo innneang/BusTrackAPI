@@ -17,6 +17,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/db', function(){
+    Cache::flush();
     echo app()->environment();
 });
 
