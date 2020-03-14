@@ -16,6 +16,9 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/db', function(){
+    echo env('DB_DATABASE');
+});
 
 $router->get('/test', function(){
     $plate1 = '13';
