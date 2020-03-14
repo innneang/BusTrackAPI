@@ -17,7 +17,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/db', function(){
-    echo env('DB_DATABASE');
+    echo env('DB_CONNECTION');
 });
 
 $router->get('/test', function(){
