@@ -16,6 +16,10 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/db', function(){
+    Cache::flush();
+    echo app()->environment();
+});
 
 $router->get('/test', function(){
     $plate1 = '13';
